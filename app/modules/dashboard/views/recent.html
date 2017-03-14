@@ -18,8 +18,6 @@ Date: 24 Jan 2016
     <!-- Main content -->
     <section class="content">
     <div class="row">
-
-
         <div class="col-md-12" data-ng-repeat="recent in vm.recents">
             <div class="box box-{{recent.theme}} box-solid">
                 <div class="box-header with-border">
@@ -30,11 +28,10 @@ Date: 24 Jan 2016
                 </div><!-- /.box-header -->
                 <div class="box-body collapse in" id="content{{recent.id}}">
                     <div class="col-md-3">
-                        <img src="../../../../images/recent/{{recent.image}}.jpg" class="img-responsive">
+                        <img src="{{vm.path+recent.image}}.jpg" class="img-responsive">
                     </div>
                     <div class="col-md-9">
                         <div class="box-body">
-
                             <strong><i class="glyphicon glyphicon-hand-right margin-r-5"></i>  Title</strong>
                             <a href="http://{{recent.url}}" target="_blank"> <h3 class="margin-top-none">{{recent.title}}</h3></a>
                             <hr>

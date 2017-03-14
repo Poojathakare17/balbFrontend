@@ -11,6 +11,7 @@
 dashboard.controller("RecentController", ['$rootScope', '$scope', '$state', '$location', 'dashboardService', 'Flash',
 function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
     var vm = this;
+    vm.path="http://localhost/practicee/balbFrontend/images/";
 
     vm.recents = [
       {
@@ -18,7 +19,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
           heading: "e - POS",
           title: "Focus Point e-POS",
           description: "Web application to handle Point of Sale and Venue management",
-          image: "e-pos",
+          image: "recent/e-pos",
           theme: "warning",
           url:"fp360.us:830",
           roles: [

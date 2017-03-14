@@ -15,5 +15,6 @@ var appConfig = {
     dateFormat: "mm/dd/yy",
     apiBase: 'http://192.168.168.213:3000/api/',
     theme: 'skin-purple',
-    layout:""
+    layout:"",
+    imgUrl:"http://localhost/practicee/balbFrontend/images/"
 };
