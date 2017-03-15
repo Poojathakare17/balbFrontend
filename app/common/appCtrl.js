@@ -117,42 +117,32 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
             state: "dashboard"
         },
         {
-            title: "Skills",
-            icon: "gears",
+            title: "Users",
+            icon: "user",
             state: "skills"
         },
         {
-            title: "Education",
-            icon: "graduation-cap",
+            title: "Gallery",
+            icon: "photo",
             state: "education"
         },
         {
-            title: "Experience",
-            icon: "suitcase",
+            title: "Blog",
+            icon: "user-secret",
             state: "experience"
         },
         {
-            title: "Recent Projects",
-            icon: "file-code-o",
+            title: "Videos",
+            icon: "play",
             state: "recent"
         },
         {
-            title: "Websites",
-            icon: "globe",
-            state: "websites"
-        },
-        {
-            title: "Portfolio",
-            icon: "anchor",
-            state: "portfolio"
-        },
-        {
-            title: "About Me",
+            title: "About Us",
             icon: "user-secret",
             state: "about"
         },
         {
-            title: "Contact",
+            title: "Contact Us",
             icon: "phone",
             state: "contact"
         }
@@ -186,11 +176,6 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
                 $("body").addClass('sidebar-collapse');
             }
         }
-    };
-
-    //navigate to search page
-    vm.search = function () {
-        $state.go('app.search');
     };
 
     console.log('getting in to the app controller');

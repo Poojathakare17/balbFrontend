@@ -1214,6 +1214,8 @@ a:focus {
   position: absolute;
   right: 0;
   left: auto;
+  background: inherit;
+  width: auto;
 }
 @media (max-width: 991px) {
   .navbar-custom-menu > .navbar-nav {
